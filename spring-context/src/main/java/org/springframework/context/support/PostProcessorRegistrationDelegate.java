@@ -142,7 +142,7 @@ final class PostProcessorRegistrationDelegate {
 			registryProcessors.addAll(currentRegistryProcessors);
 			//调用他的后置处理方法
 			invokeBeanDefinitionRegistryPostProcessors(currentRegistryProcessors, registry);
-			//调用完之后，马上clea掉
+			//调用完之后，马上clean掉
 			currentRegistryProcessors.clear();
 //-----------------------------------------调用自定义Order接口BeanDefinitionRegistryPostProcessor完毕-优先级No2-End-----------------------------------------------------------------------------------------------------------------------------
 			//调用没有实现任何优先级接口的BeanDefinitionRegistryPostProcessor
